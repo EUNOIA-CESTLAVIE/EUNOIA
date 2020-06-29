@@ -1,54 +1,52 @@
-#mainNavbar{
-    font-family: 'Raleway', sans-serif;
-    color:  #ffffff;
-    border-bottom: 2px solid rgba(250, 236, 38) ;
-    background: rgba(00, 00, 00,0.85);
-  }
-  
-  body{
-      background-image: url(https://images.unsplash.com/photo-1494386346843-e12284507169?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
-      background-size: cover;
-      background-position: center;
-      background-repeat: repeat;
-      margin-top: 100px;
-  }
-  
-  .sucpg{
-      width: 600px;
-      background-color: rgb(0, 0, 0, 0.6);
-      margin: auto;
-      color: #FFFFFF;
-      padding: 50px 0px 10px 0px;
-      text-align: center;
-      border-radius: 15px 15px 0px 0px;
-      font-family: little sparrow regular;
-  }
-  
-  #suc{
-      font-size: 200px;
-  }
-  
-  .regid{
-      background-color: rgb(0,0,0,0.6);
-      width: 600px;
-      margin: auto;
-      text-align: center;
-      color: #FFFFFF;
-      border-radius: 0px 0px 0px 0px;
-      font-size: 30px;
-  }
-  
-  .ty{
-      font-size: 30px;
-      background-color: rgb(0,0,0,0.6);
-      width: 600px;
-      margin: auto;
-      text-align: center;
-      color: #FFFFFF;
-      border-radius: 0px 0px 15px 15px;
-  }
-  
-  .lg{
-      color: #FFDF00;
-      font-family: Beon Medium;
-  }
+body {
+  background-image: url(https://images.unsplash.com/photo-1494386346843-e12284507169?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  margin-top: 100px;
+  font-family: "Nunito", sans-serif;
+}
+
+.sucpg {
+  width: 600px;
+  margin: auto;
+
+  padding: 50px 0px 10px 0px;
+  text-align: center;
+  background-color: rgba(51, 65, 194, 0.658);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.473),
+    0 6px 20px 0 rgba(0, 0, 0, 0.808);
+  color: #f3b4eb;
+}
+
+#suc {
+  font-size: 100px;
+  margin-bottom: 100px;
+}
+
+.regid {
+  width: 600px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  color: #f1b0e9;
+  font-size: 25px;
+}
+
+.ty {
+  font-size: 30px;
+  width: 600px;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 25px;
+  text-align: center;
+  color: #f3b5eb;
+}
+
+.hr {
+  width: 70%;
+  align-content: center;
+  border-radius: 10px;
+  border-top: 3px solid #1a0ce446;
+}

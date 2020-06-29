@@ -24,19 +24,26 @@
         <link rel="stylesheet" type="text/css" href="/success.css">
         
     </head>
-<body>
+<body class="bodyLogin" >
   <%- include('./partials/navbar') -%>
     
       
-
-    <div class="sucpg"><h1 ><span id="suc">Success!</span></h1></div>
-
+    <section>
+      <div class="sucpg" style="margin-top: 230px;">
+       <h1 >
+        <span id="suc" style="margin-bottom: 100px;">Success!</span>
+       </h1>
+    <hr class="hr"> 
     <div class="regid">
       <p>YOUR REGISTRATION NUMBER IS: <br> <h2><%= currentUser._id %></h2><br></p>
     </div>
 
+    <hr class="hr"> 
+    <div class="ty">Thank you for registering with  <span class="lg">EUNOIA</span></div>
+
+     </div>
+    </section>
     
-    <div class="ty">Thank you for registering with <div class="lg">EUNOIA</div></div>
 
       <!--END OF HEADER-->
     <!-- Optional JavaScript -->
