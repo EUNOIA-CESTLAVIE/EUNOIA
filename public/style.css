@@ -8,8 +8,9 @@ body {
   font-family: "Raleway", sans-serif;
   color: #ffffff;
   /**border-bottom: 2.5px solid #5ea7bd;*/
-  background-image: linear-gradient(to left, #7ab5da, #5ea9d8);
-  /**background: #5ea9d8;*/
+  /*background-image: linear-gradient(to left, #7ab5da, #5ea9d8);
+  opacity: 0.8;
+  background: #5ea9d8;*/
 }
 
 #mainNavbar .navbar-brand {
@@ -34,7 +35,8 @@ body {
 }
 
 .navbar.scrolled {
-  background: rgba(00, 00, 00, 0.85);
+  background-image: linear-gradient(to left, #7ab5da, #5ea9d8);
+  opacity: 0.8;
   transition: background 80ms;
 }
 
@@ -75,6 +77,60 @@ body {
     font-size: medium;
     font-weight: bolder;
     color: #ffffffda;
+  }
+}
+
+.fade {
+  -webkit-animation: fade 5s;
+  animation: fade 5s;
+  -moz-animation: fade 5s;
+  -o-animation: fade 5s;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@-moz-keyframes fade {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@-o-keyframes fade {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
   }
 }
 
@@ -226,52 +282,43 @@ body {
 
 /**SNAPS OF LIGHT*/
 
-#forthehead {
-  background-color: gold;
-  border: 2px solid white;
-  border-radius: 10px;
-  font-size: 60px;
-  font-weight: bold;
-  font-family: "Architects Daughter", cursive;
-  color: black;
-  padding-left: 10px;
-  text-align: center;
-}
-
-#fordetails {
-  background-color: gold;
-  border: 2px solid white;
-  border-radius: 10px;
-  font-size: 40px;
-  font-weight: bold;
-  font-family: "Architects Daughter", cursive;
-  color: black;
-  padding-left: 10px;
-}
-
-#fortheblock {
-  background-color: black;
-  border: 2px solid white;
+.buyinfo {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(75, 56, 71, 0.425),
+    0 6px 20px 0 rgba(80, 59, 85, 0.418);
   border-radius: 20px;
-  font-family: "Josefin Sans", sans-serif;
-  padding-left: 10px;
 }
 
-#fortheblock span {
-  font-size: 2em;
-  color: #ffffff;
+.buyNow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
 }
 
-#fortheblock {
-  color: #ffffff;
-  font-size: 1.5em;
+.buyNow:hover {
+  position: absolute;
+  bottom: 23px;
+  left: 51%;
+}
+.buyBox {
+  margin: auto;
+  padding: 20px 10px 10px 20px;
 }
 
-#fortheblock:hover {
-  color: gold;
-  font-size: 1.5em;
+.deets {
+  font-size: larger;
 }
 
+.buyBut {
+  border: 2px solid #f17a7e;
+  color: #000000;
+}
+
+.buyBut:hover {
+  background: linear-gradient(to right, #f17a7e, #eca1a4);
+  color: #f4f4f4;
+}
 /**SNAPS OF LIGHTS ENDS*/
 
 /*NEW.HTML STYLES*/
