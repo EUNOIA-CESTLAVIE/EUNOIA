@@ -62,22 +62,24 @@
       <form action="/register" method="POST" autocomplete="off">
         <span class="text-center">SIGN UP</span>
         <div class="input-container">
-          <input
-            type="email"
-            required=""
-            name="username"
-            placeholder="username"
-          />
+          <input type="text" required="" name="firstname" />
+          <label>FIRSTNAME</label>
+        </div>
+        <div class="input-container">
+          <input type="text" required="" name="lastname" />
+          <label>LASTNAME</label>
+        </div>
+        <div class="input-container">
+          <input type="email" required="" name="username" />
           <label>EMAIL ID</label>
         </div>
         <div class="input-container">
-          <input
-            type="password"
-            required=""
-            name="password"
-            placeholder="password"
-          />
+          <input type="password" required="" name="password" />
           <label>PASSWORD</label>
+        </div>
+        <div class="input-container">
+          <input type="number" required="" name="phone" />
+          <label>PHONE NO</label>
         </div>
         <button type="submit" class="btn">SIGN IN</button>
       </form>
