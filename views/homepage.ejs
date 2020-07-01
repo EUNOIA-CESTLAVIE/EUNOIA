@@ -29,86 +29,88 @@
       crossorigin="anonymous"
     />
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+      type="text/javascript"
+      async
+    ></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="/style.css" />
 
     <!--ICONS-->
     <script src="https://use.fontawesome.com/b9f3d50b9e.js"></script>
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
     <title>EUNIOA</title>
   </head>
 
   <body>
     <header style="background-color: #f4a4a4;">
-        <%- include('./partials/navbar') -%>
+      <%- include('./partials/navbar') -%>
     </header>
 
-    <section style="padding-top:100px;padding-bottom:75px;background-color:#f4a4a4">
-     <div class="container pt-4 pb-4" >
-      <div class="row">
-        <div class="col-md-8">   
-          <img
-           class="image"
-           src="/main.jpg"
-            alt=""
-            style="width: 600px; height:400px"
-          />
-        </div>
-        <div class="col-md-4 buyinfo">
-          <div class="buyBox">
-            <h2 class="headerOfpage">
-              SNAPS OF LIGHT - <h4>a photography event for all</h4>
-            </h2>
-            <hr style= "width: 95%;">
-            <div class="pt-5">
-              <div  class=" pb-2"><ion-icon name="calendar"></ion-icon><span class="pl-3 deets">July 4 | 7PM</span></div>
-              <div class=" pb-2"><ion-icon name="pin-outline"></ion-icon><span class="pl-3  deets">Juhu, Andheri(w)</span></div>
-              <div class=" pb-2"><ion-icon name="cash"></ion-icon><span class="pl-3  deets">₹400</span></div>
-            </div>
-
-            <div class="buyNow">
-              <a href="/forms">
-                <button type="button" class="btn btn-lg buyBut" >
-                  BUY NOW
-                </button></a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-     </div> 
-    </section>
-
-    <section style="background-color:  #9aa4ec;">
-      <section class="container pt-5 pb-5">
-        <div >
-         <h5>ABOUT</h5>
-         <p>Artkhoj in collaboration with Lavanya brings you an unexplored journey of the epic which must have been heard many times but not understood fully, The Ramayana
+    <!--END OF HEADER-->
+    <!-- Display the countdown timer in an element
+<p class="timer">EVENT IN: </p>
+<p id="demo1"></p>
 
 
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("August 5, 2020 18:37:25").getTime();
 
-          Ramayana one of the greatest Epics that India is proud of tells us the way of life.
-          
-          While Ramayana has been explored in all its glory by many Lavanya Prasad tries to bring to you the awe that she felt when she happened to connect the dots in the epic through the stories in Ramayana some known and some rarely known that helped her see the bigger picture.
-          
-          
-          
-          To her it is a never-ending journey and every time she revisits the stories a new layer unfolds. She hopes to give you a similar experience through this series.</p>
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo1").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo1").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+-->
+
+    <!--EVENT TILES-->
+    <section>
+      <section>
+        <div id="landing-header">
+          <a href="/events">
+            <button type="button" class="btn btn-lg butHome">
+              <h1>WELCOME TO EUNIOA</h1>
+            </button></a
+          >
         </div>
 
-       <div>
-        <h5>Takeaway from the session:</h5>
-        <p>The sessions are aimed at creating a spark in the minds of the listeners that will help them go and find more about what is being shared. This we believe will want you to go and find more about Ramayana and its characters.
-          <h5>Any prerequisite:</h5>
-          <p>Come with an open mind and enjoy the stories.</p></p>
-       </div>
+        <ul class="slideshow">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        </div>
       </section>
+    <!---->
       
-    </section>
-    
-  </body>
-  <!-- Optional JavaScript -->
+
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
