@@ -6,6 +6,10 @@ User = require("./models/user");
 const mongoose = require("mongoose");
 var passport = require("passport"),
   LocalStrategy = require("passport-local");
+var async = require("async");
+var nodemailer = require("nodemailer");
+var crypto = require("crypto");
+var flash = require("connect-flash");
 // Process setup
 require("dotenv/config");
 
@@ -70,10 +74,14 @@ app.use(function (req, res, next) {
 ////////////
 
 // Home
+
 app.get("/", (req, res) => {
   res.render("homepage", { currentUser: req.user });
 });
-
+//events
+app.get("/events", (req, res) => {
+  res.render("events");
+});
 // Snaps of flight
 app.get("/snapsoflight", (req, res) => {
   res.render("snapsoflight");
@@ -207,6 +215,10 @@ app.post(
 app.get("/logout", function (req, res) {
   req.logout();
   res.redirect("/");
+});
+
+app.get("/forgot", function (req, res) {
+  res.render("forgot");
 });
 
 function isLoggedIn(req, res, next) {

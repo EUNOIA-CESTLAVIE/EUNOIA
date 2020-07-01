@@ -6,6 +6,7 @@ var UserSchema = new mongoose.Schema({
   firstname: String,
   lastname: String,
   phone: Number,
+  email: { type: String, unique: true, required: true },
 });
 UserSchema.plugin(passportLocalMongoose);
 module.exports = mongoose.model("User", UserSchema);
