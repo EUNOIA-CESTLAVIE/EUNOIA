@@ -33,7 +33,7 @@ const Registration = mongoose.model("details", {
   email: String,
   area_code: String,
   phone: String,
-  subject: String,
+  //subject: String,
   tickets: Number,
 });
 
