@@ -29,34 +29,43 @@
      <!--ICONS-->
      <script src="https://use.fontawesome.com/b9f3d50b9e.js"></script>
 	<link rel="stylesheet" type="text/css" href="/form.css">
+
+
+	
+
 </head>
 <body>
     <%- include('./partials/navbar') -%>
-	<div class="regform" style="margin-top: 100px;"><h1 ><span id="reg">REGISTRATION FORM</span></h1></div>
-	<div class="main">
+	<!-- <div class="regform " style="margin-top: 100px;"><h1 ><span id="reg">REGISTRATION FORM</span></h1></div>
+	<div class="main"> -->
+
+
+		<div class="form">
+  <div class="mail"></div>
+  <h1>Registration form</h1>
 
 		<form action="/forms" method="POST">
 
-		<div id="name">
-			<h2 class="name">NAME</h2>
-			<input class="firstname" type="text" name="first_name" required><br>
-			<label class="firstlabel">FIRST NAME</label>
-			<input class="lastname" type="text" name="last_name" required>
-			<label class="lastlabel">LAST NAME</label>
-		</div>
+		<!-- <div id="name" >
+			<h2 class="name">NAME</h2> -->
+			<input class="firstname" type="text" name="first_name" required placeholder="First Name"><br>
+			<!-- <label class="firstlabel">FIRST NAME</label> -->
+			<input class="lastname" type="text" name="last_name" required placeholder="Last Name"><br>
+			<!-- <label class="lastlabel">LAST NAME</label>
+		</div> -->
 
-		<h2 class="name">EMAIL ID</h2>
-		<input class="email" type="text" name="email">
+		<!-- <h2 class="name">EMAIL ID</h2> -->
+		<input class="email" type="text" name="email" placeholder="Email Id" required><br>
 
-		<h2 class="name">PHONE NUMBER</h2>
-		<input class="code" type="text" name="area_code">
-		<label class="area-code">AREA CODE</label>
-		<input class="number" type="text" name="phone" required>
-		<label class="phone-number">PHONE NUMBER</label>
+		<!-- <h2 class="name">PHONE NUMBER</h2> -->
+		<input class="code" type="text" name="area_code" placeholder="Area Code" required><br>
+		<!-- <label class="area-code">AREA CODE</label> -->
+		<input class="number" type="text" name="phone" placeholder="Cellphone Numer" required><br>
+		<!-- <label class="phone-number">PHONE NUMBER</label> -->
 
 		<!--INSERT IMAGE TAG HERE-->
 
-		<h2 class="name">REGISTRATION TYPE</h2>
+		<!-- <h2 class="name">REGISTRATION TYPE</h2>
 		<select class="option1" name="subject" required>
 		<option disabled="disabled" selected="selected">--Choose Option--</option>
 		<option id="self">Self</option>
@@ -64,13 +73,14 @@
 		<option>Corporate</option>
 		<option>Others</option>
 		</select>
-
-		<h2 class="name">NUMBER OF TICKETS</h2>
-		<input class="tickets" type="text" name="tickets" required>
+ -->
+		<!-- <h2 class="name">NUMBER OF TICKETS</h2> -->
+		<input class="tickets" type="text" name="tickets" placeholder="Numer of tickets" required><br>
 
 
 		<br><br>
-		<a href="/preview"><button type="submit">REGISTER</button></a>
+		<a href="/preview"><button type="submit" class="button" style="vertical-align:middle">REGISTER</button></a>
+	</div>
 		</form>
 	</div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -79,6 +89,7 @@
     crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+      <script src="forms.js"></script>
 
 </body>
 </html>
