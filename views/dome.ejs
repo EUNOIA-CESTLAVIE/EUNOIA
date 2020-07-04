@@ -37,7 +37,7 @@
   <%- include('./partials/navbar') -%>
     <!--END OF HEADER-->
     <!--BODY-->
-
+<div class="main">
     <section class="container bod" style="margin-top: 100px;">
       <br>
       <br>
@@ -158,6 +158,18 @@
         </div>
       </footer>
     
+    </div>
+<div class="containers">
+      <div id="load"></div>
+       </div>
+    <script>
+document.querySelector('.main').style.display='none';
+document.getElementById('load').classList.add('loader');
+    setTimeout(() => {
+      document.getElementById('load').classList.remove('loader');
+      document.querySelector('.main').style.display='block';
+    }, 2000);
+    </script> 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

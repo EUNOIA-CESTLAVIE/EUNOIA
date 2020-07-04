@@ -526,3 +526,56 @@ body {
   box-shadow: 0px 0px 8px rgba(108, 99, 255, 0.5);
 }
 */
+.containers {
+  margin-top:18em;
+  display:flex;
+  justify-content: center;
+}
+.loader {
+  position:relative
+}
+.loader::before,
+.loader::after {
+  content:"";
+  width:1.8em;
+  height:1.8em;
+position:absolute;
+border-radius:4em;
+}
+
+.loader::before{
+  background-color:lightcoral;
+  left:0;
+  transform:translateX(10px);
+animation:Moveleft 1s ease infinite;
+}
+.loader::after{
+  background-color:lightgreen;
+  right:0;
+  transform:translateX(-10px);
+animation:Moveright 1s ease infinite
+}
+ @keyframes Moveright{
+   0%{
+     transform:translateX(-10px);
+   }
+   50%{
+     transform:translateX(10px);
+   background:rgba(144, 238, 144, 0.692)
+   }
+   100%{
+     transform:translateX(-10px);
+   }
+ }
+ @keyframes Moveleft{
+   0%{
+     transform:translateX(10px);
+   }
+   50%{
+     transform:translateX(-10px);
+    background-color:rgba(240, 128, 128, 0.692);
+   }
+   100%{
+     transform:translateX(10px);
+   }
+ }

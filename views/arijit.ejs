@@ -49,7 +49,7 @@
 </head>
 <body>
   <%- include('./partials/navbar') -%>
-
+<div class="main">
     <!--END OF HEADER-->
     <!--BODY-->
 
@@ -181,7 +181,18 @@ Plot No: RG1A, G Block, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 4
           <div class="text-center pb-3">&copy; Copyright EUNIOA</div>
         </div>
       </footer>
-    
+      </div>
+<div class="containers">
+      <div id="load"></div>
+     </div>
+    <script>
+document.querySelector('.main').style.display='none';
+document.getElementById('load').classList.add('loader');
+    setTimeout(() => {
+      document.getElementById('load').classList.remove('loader');
+      document.querySelector('.main').style.display='block';
+    }, 2000);
+    </script> 
     <!--END OF FOOTER-->
 
     <!-- Optional JavaScript -->

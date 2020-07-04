@@ -10,6 +10,7 @@ var async = require("async");
 var nodemailer = require("nodemailer");
 var crypto = require("crypto");
 var flash = require("connect-flash");
+var otp=require("otp-generator");
 // Process setup
 require("dotenv/config");
 
@@ -26,7 +27,6 @@ mongoose
     }
   )
   .then(() => console.log("Connected to db!"));
-
 const Registration = mongoose.model("details", {
   first_name: String,
   last_name: String,
@@ -50,7 +50,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Static
 app.use(express.static("public"));
-
+app.use(flash());
 //PASSPORT CONFIGURATION
 app.use(
   require("express-session")({
@@ -369,5 +369,6 @@ const port = process.env.PORT || 3000;
 const host = process.env.HOST || "localhost";
 
 app.listen(port, process.env.IP, function () {
+
   console.log("Server is listening!");
 });
